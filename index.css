@@ -75,6 +75,7 @@ body {
     padding: 10px 25px;
     display: flex;
     justify-content: space-between;
+    transition: all 0.2s ease;
 }
 
 h2 {
@@ -89,6 +90,7 @@ h2 {
 
 .question:hover {
     cursor:pointer;
+    color: hsl(14, 88%, 65%);
 }
 
 hr {
@@ -105,11 +107,14 @@ display: none;
 animation-name: slideOut;
 animation-duration: .5s;
 animation-fill-mode: forwards;
+transition: all 0.2s ease;
+
 }
 
 .question.active h2 {
     font-weight: 700;
     height: 70px;
+    color: hsl(238, 29%, 16%);
     }
 
 .question.active span {
@@ -152,7 +157,7 @@ animation-fill-mode: forwards;
     }
 
 
-    @media (min-width: 1000px) {
+    @media (min-width: 900px) {
 
         body {
             height: 100vh;
@@ -160,8 +165,8 @@ animation-fill-mode: forwards;
 
         .container {
             flex-direction: row;
-            width: 1000px;
-            max-width: 1000px;
+            width: 100%;
+            max-width: 100%;
             padding: 75px 0px;
             height: 400px;
             overflow: hidden;
@@ -175,8 +180,8 @@ animation-fill-mode: forwards;
         .box {
             display: initial;
             position: absolute;
-            left: -80px;
-            top: 240px;
+            left: -11%;
+            top: 35%;
             transform: scale(1.1);
             z-index: 3;
         }
@@ -184,8 +189,8 @@ animation-fill-mode: forwards;
         .shadow {
             content: url("images/bg-pattern-desktop.svg");
             position: absolute;
-            top: -260px;
-            left: -250px;
+            top: -175%;
+            left: -50%;
             transform: scale(2);
         }
 
