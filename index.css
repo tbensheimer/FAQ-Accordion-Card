@@ -135,7 +135,12 @@ transition: all 0.2s ease;
 }
 
 .question.active .long {
+    display: flex;
     height: 90px;
+}
+
+.question.active span {
+align-self: start;
 }
 
 
